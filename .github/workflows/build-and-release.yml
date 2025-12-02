@@ -30,7 +30,29 @@ jobs:
       - name: Create settings.xml manually
         run: |
           mkdir -p ~/.m2
-          echo "<settings><servers><server><id>github</id><username>x-access-token</username><password>\${env.GITHUB_TOKEN}</password></server></servers></settings>" > ~/.m2/settings.xml
+          cat <<EOF > ~/.m2/settings.xml
+          <settings>
+            <servers>
+              <server>
+                <id>github</id>
+                <username>x-access-token</username>
+                <password>\${env.GITHUB_TOKEN}</password>
+              </server>
+              <server>
+                <id>github-rlp</id>
+                <username>x-access-token</username>
+                <password>\${env.GITHUB_TOKEN}</password>
+              </server>
+              <server>
+                <id>github-cryptoj</id>
+                <username>x-access-token</username>
+                <password>\${env.GITHUB_TOKEN}</password>
+              </server>
+            </servers>
+          </settings>
+          EOF
+
+          echo "✅ settings.xml created with multiple server profiles"
           ls -la ~/.m2/settings.xml
 
       - name: Build with Maven
