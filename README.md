@@ -3,7 +3,6 @@
 **goldenera-merkletrie** is a **Java library** for implementing the **Merkle Patricia Trie (MPT)** data structure, which is essential for efficient and secure state management in blockchain applications.
 
 ---
-
 ## 💡 About Merkle Patricia Trie
 
 MPT combines a **Merkle Tree** (for verifying data integrity via a root hash) and a **Patricia Trie** (for efficiently storing and accessing key-value pairs).
