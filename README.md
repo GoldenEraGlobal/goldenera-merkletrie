@@ -26,6 +26,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 **Important:** This project includes code from Apache 2.0 licensed projects. The original Apache 2.0 copyright notices and attributions are preserved in accordance with the Apache 2.0 license requirements. See the [NOTICE](NOTICE) file for detailed attribution information.
 
+
 ### Summary
 - **Project License:** MIT
 - **Derived Code:** Retains Apache 2.0 license where applicable
