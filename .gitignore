@@ -49,3 +49,8 @@ Thumbs.db
 *.wmv
 .mvn
 .vscode
+._*
+.agents
+.zed
+CLAUDE.md
+AGENTS.md
